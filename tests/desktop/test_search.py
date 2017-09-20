@@ -141,7 +141,7 @@ class TestSearch:
         result_count = search_page.filter.results_count
         assert result_count > 0
         search_page.filter.tag('cookie').click_tag()
-        assert search_page.filter.results_count >= result_count
+        assert search_page.filter.results_count = result_count
 
     @pytest.mark.nondestructive
     def test_that_search_results_return_20_results_per_page(self, base_url, selenium):
